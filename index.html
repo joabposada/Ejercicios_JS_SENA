@@ -1,19 +1,46 @@
 <!DOCTYPE html> 
 <html lang="en">
 <head> 
+    <title>Ejercicios Dimitri</title>
     <link rel="stylesheet" href="style.css"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicios_Dimitri</title>
+</head>
+
+    <body>
+
     <h2> Ejercicio 1: Calculadora de IVA</h2>
     <input type="number" id="precioBase" placeholder="Precio del producto">
     <input type="number" id="porcentajeIva" placeholder="porcentaje de IVA">
     <button id="calcularIva" onclick="calcularTotalIva()">Calcular</button>
     <p id="resultadoIva"></p>
-    
-</head>
-<body>
+    <hr> - - - -- - --  --    <hr>
+
+    <h2> Ejercicio 2: Area y perimetro</h2> <!label es el letrero, aviso, input la puerta>
+     
+    <label for="ladoCuadrado"> Medida del lado</label>
+    <input type="number" id="ladoCuadrado" placeholder="EJ: 5">
+    <button onclick="calcularCuadrado()">Calcular</button>
+    <p id="resultadoArea"></p>
+    <p id="resultadoPerimetro"></p> <!p para mostrar los resultados distintos>
     <script src="main.js"></script>
+    <hr>-------------------</hr>
+
+    <h3> Ejercicio 3: Unidades y decenas</h3>
+
+    <label for="numero"> numero a ingresar</label>
+    <input type="number" id=" numeroIngresar" placeholder="EJ: 73"
+    <button onclick="calcularDigitos()"> obtener resultado </button>
+    <p id="Unidad"></p>
+    <p id="decimal"></p>
+
+
+
+ 
+    
+
+
+    
     
 </body>
 </html>

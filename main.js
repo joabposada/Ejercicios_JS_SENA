@@ -7,3 +7,16 @@ let montoIva= precio * iva/100;
 let total = Number(precio) + montoIva;
 document.getElementById("resultadoIva").innerText = total;
 }
+
+//  Ejercicio 2: Area y perimetro
+
+function calcularCuadrado(){
+    let lado = document.getElementById("ladoCuadrado").value; //buscar con el id
+    let area = lado * lado; //el area del cuadrado se multiplica por si mismo (lado)
+    let perimetro = lado * 4;
+    document.getElementById("resultadoArea").innerText = "El area es "  + area;
+    document.getElementById("resultadoPerimetro").innerText = "El perimetro es " + perimetro; //llamamos y mostramos
+}
+ 
+// Ejercicio 2: Unidades y decenas
+
