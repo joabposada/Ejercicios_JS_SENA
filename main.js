@@ -18,5 +18,63 @@ function calcularCuadrado(){
     document.getElementById("resultadoPerimetro").innerText = "El perimetro es " + perimetro; //llamamos y mostramos
 }
  
-// Ejercicio 2: Unidades y decenas
+// Ejercicio 3: Unidades y decenas
+
+function calcularDigitos(){
+    let numero = document.getElementById("numeroIngresar").value;
+    let unidades = numero % 10; //%Calcula lo que sobra 
+    let decenas = (numero - unidades) /10; //reste la unidad original y lo dividi entre 10
+    document.getElementById("Unidad").innerText = "La unidad del numero es "  + unidades;
+    document.getElementById("decena").innerText = "La decena del numero es " + decenas;
+}
+
+//Ejercicio 4: Cocina
+
+function calcularCantidad(){
+    let invitados = document.getElementById("numeroInvitados").value;
+    let patatasTotal = invitados * 200;
+    let kilospatatas = patatasTotal / 1000; //pasarlo a kilos para los huevos y cebolla
+    let huevosTotal = kilospatatas * 5;
+    let cebollaTotal = kilospatatas * 300;
+    document.getElementById("gramospatata").innerText = "Cantidad de patatas son "  + patatasTotal;
+    document.getElementById("cantidadhuevos").innerText = "Cantidad de huevos son " + huevosTotal;
+    document.getElementById("gramoscebolla").innerText = "Cantidad de cebolla es "  + cebollaTotal;
+}
+
+//Ejercicio 5: Numero aleatorio
+//se hace antes para que no se borre los datos por la funcion
+Math.random() //genera numeros aleatorios
+let numeroSecreto = Math.floor(Math.random() * 101); //math.floor redondea hacoa abajo
+let intentosRegresivos = 15;
+let listaNumeros = [] //guarda los numeros
+function numeroAleatorio(){
+    if (intentosRegresivos<=0){ //Para parar y que no continue en negativo
+        alert("Juego terminado, no te quedan intentos");
+        return;
+    }
+    let numero = Number(document.getElementById("numeroIngresado").value); //para comparar bien con un numero, hay que especificarlo
+    intentosRegresivos = intentosRegresivos-1; //al tenerla ya antes, simplemente le restamos
+    document.getElementById("intentosRestantes").innerText = "Intentos restantes: "  + intentosRegresivos;
+    listaNumeros.push(numero);//para meter un nuevo elemento en la lista usamos push
+    if (numero > numeroSecreto) {
+        document.getElementById("pista").innerText = "El numero es menor " 
+    }else if (numero<numeroSecreto){
+        document.getElementById("pista").innerText = "El numero  es mayor "
+    }else {
+        document.getElementById("pista").innerText = "Felicidades "
+    }
+     document.getElementById("lista").innerText = "numeros ingresados:  " + listaNumeros;
+}
+
+//Ejercicio 6: Fibonacci
+
+//Fibonacci es una serie infinita de números donde cada término se obtiene sumando los dos anteriores.
+//formula: fn=fn-1 +fn-2
+function Fibonacci(){
+    let cantidad = Number(document.getElementById("numeroInicial").value);
+    let serie = [0,1] 
+}
+
+
+
 
