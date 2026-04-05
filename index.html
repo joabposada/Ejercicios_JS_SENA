@@ -8,6 +8,7 @@
 </head>
 
     <body>
+<div class="ejercicio-card"></div>
 
     <h2> Ejercicio 1: Calculadora de IVA</h2>
     <input type="number" id="precioBase" placeholder="Precio del producto">
@@ -15,6 +16,8 @@
     <button id="calcularIva" onclick="calcularTotalIva()">Calcular</button>
     <p id="resultadoIva"></p>
     <hr>    <hr>
+    </div>
+    <div class="ejercicio-card"></div>
 
     <h2> Ejercicio 2: Area y perimetro</h2> <!label es el letrero, aviso, input la puerta>
      
@@ -24,7 +27,8 @@
     <p id="resultadoArea"></p>
     <p id="resultadoPerimetro"></p> <!p para mostrar los resultados distintos>
     <script src="main.js"></script>
-    <hr>       </hr>
+    </div>
+    <div class="ejercicio-card"></div>
 
     <h2> Ejercicio 3: Unidades y decenas</h2>
 
@@ -33,7 +37,8 @@
     <button onclick="calcularDigitos()"> obtener resultado </button>
     <p id="Unidad"></p>
     <p id="decena"></p>
-    <hr>    <hr>
+    </div>
+    <div class="ejercicio-card"></div>
 
     <h2>Ejercicio 4: Cocina</h2>
 
@@ -43,7 +48,8 @@
     <p id="gramospatata"></p>
     <p id="cantidadhuevos"></p>
     <p id="gramoscebolla"></p>
-    <hr>    <hr>
+    </div>
+    <div class="ejercicio-card"></div>
 
     <h2>Ejercicio 5:Numero aleatorio</h2>
 
@@ -53,7 +59,8 @@
     <p id="intentosRestantes"></p>
     <p id="pista"></p>
     <p id="lista"></p>
-<hr>   <hr>
+</div>
+<div class="ejercicio-card"></div>
 
 <h2>Ejercicio 6: Fibonacci</h2>
 
@@ -61,7 +68,8 @@
 <button onclick="Fibonacci()">Sumar los dos anteriores</button>
 <p id="resultado"></p>
 
-<hr>   <hr>
+</div>
+<div class="ejercicio-card"></div>
 
 <h2>Ejercicio 7: Mayor o menor</h2>
 
@@ -70,15 +78,16 @@
 <button onclick="mayoromenor()">Numero a compárar</button>
 <P id="Resultado"></P>
 
-<hr>   <hr>
+</div>
+<div class="ejercicio-card"></div>
 
 <h2>Ejercicio 8: Factorial</h2>
 
  <input type="number" id="numeroFactor">
  <button onclick="factorial()">Factores</button>
  <p id="respuesta"></p>
-
- <hr>   <hr>
+</div>
+<div class="ejercicio-card"></div>
 
  <h2>Ejercicio 9: multiplos de 6</h2>
 
@@ -87,16 +96,19 @@
 <button onclick="multiplo()">Numero a multiplar por 6</button>
 <P id="Respuesta"></P>
 
-<hr>  <hr>
+</div>
+<div class="ejercicio-card"></div>
 
 <h2>Ejercicio 10; par e impar</h2>
 
-<button onclick="pareimpar()">evriguar si par o impar</button>
+<button onclick="pareimpar()">averiguar si par o impar</button>
 <p id="numerosElegidos"></p>
 <p id="par"></p>
 <p id="impar"></p>
 
- <hr>    <hr>
+ 
+</div>
+<div class="ejercicio-card"></div>
 
  <h2>Ejercicio 11:multiplos de 3 fuera</h2>
 
@@ -106,10 +118,51 @@
 
 
 
-    
+</div>
+<div class="ejercicio-card"></div>
 
+<h2>Ejercico 12:Triangulos</h2>
 
-    
-    
+<input type="number" id="Lado1">
+<input type="number" id="Lado2">
+<input type="number" id="Lado3">
+<button onclick="Triangulos()">Averiguar tipo de triangulo</button>
+<p id="Equilatero"></p>
+<p id="Isoceles"></p>
+<p id="Escaleno"></p>
+
+</div>
+<div class="ejercicio-card"></div>
+
+<h2>Ejercicio 13" Caracteres</h2>
+
+<input  id="IngresarPalabra">
+<button onclick="Caracteres()">Ingresa culquier palabra</button>
+<p id="cantidad"></p>
+
+</div>
+<div class="ejercicio-card"></div>
+
+<h2>Ejercicio 14: Arreglos</h2>
+
+<button onclick="arreglos()">mostrar diferentes arreglos</button>
+<p id="Arreglo1"></p>
+<p id="Arreglo2"></p>
+<p id="Arreglo3"></p>
+
+</div>
+<div class="ejercicio-card"></div>
+
+<h2>Ejercicio 15: FINAL!</h2>
+
+<input type="number" id="numero1">
+<input type="number" id="numero2">
+<input type="radio" name="operacion" id="suma" value="suma"> Suma <!p radio es un boton de seleccion(solo una)>
+<input type="radio" name="operacion" id="resta" value="resta"> Resta  <!p value es como una identidad secreta o sea el dato real>
+<input type="radio" name="operacion" id="multiplicacion" value="multiplicacion"> Multiplicacion
+<input type="radio" name="operacion" id="division" value="division"> division <!p Investigue un truco llamado name para que el navegador sepa que es de un mismo grupo>
+<button onclick="calcular()">calcular resultado</button>
+<p id="resultadoCalculadora"></p>
+</div>
 </body>
 </html>

@@ -1,0 +1,74 @@
+body {
+    background-color: #f4f7f6;/*fondo*/
+    font-family: Arial, Helvetica, sans-serif; /*fuente*/
+    color: #333; /*color texto*/
+    padding: 20px;/*espacio interno de un elemento a borde*/
+    line-height: 1.6; /*Espacio entre lineas*/
+
+}
+h2{ 
+    color: #2c3e50;
+    border-left: 5px solid#3498db;
+    padding-left: 10px;
+    margin-top: 40px;
+}
+
+hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 30px 0;
+}
+
+button{
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer; /*cambia la flecha*/
+    transition: background 0.3s;
+}
+.ejercicio-card{
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba (0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+input{
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    outline: none;
+
+}
+
+button:hover{
+    background-color: #2980b9; /*una reaccion; hover*/
+}
+
+p{
+    background-color: #e8f8f5;
+    color: #1e8449;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    border-left: 5px solid #2ecc71;
+    margin-top: 15px;
+}
+
+input[type="radio"]{
+    width: auto;
+    display: inline;
+    margin-right: 5px;
+}
+
+label {
+    margin-right: 15px;
+    font-size: 14px;
+}
